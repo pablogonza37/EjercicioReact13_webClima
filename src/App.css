@@ -27,3 +27,7 @@ body {
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2bbfe4', endColorstr='#eaecc6',GradientType=1 ); /* IE6-9 */
 }
+
+.formulario{
+  background: rgba(0, 0, 0, 0.432);
+}
