@@ -8,7 +8,7 @@ Si la ubicación ingresada no existe, se muestra un mensaje de error indicando q
 
 ## Instalación
 
-- Clona este repositorio en tu máquina local: git clone https://github.com/tu-usuario/web-del-clima.git
+- Clona este repositorio en tu máquina local: git clone https://github.com/pablogonza37/EjercicioReact13_webClima.git
 - Navega al directorio del proyecto: cd web-del-clima
 - Instala las dependencias utilizando npm: npm install
 
