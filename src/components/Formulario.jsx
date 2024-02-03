@@ -1,6 +1,7 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
+import InfoClima from "./InfoClima";
 
 const Formulario = () => {
   const [ciudad, setCiudad] = useState("");
@@ -21,10 +22,10 @@ const Formulario = () => {
           setError("No se encontraron datos de la ciudad ingresada.");
           setInfoClima("");
         } else {
-          const weather = `Clima en ${data.name}: ${data.weather[0].description}. Temperatura: ${data.main.temp}°C`;
+          const weather = data;
           setInfoClima(weather);
-          setPais('');
-          setCiudad('');
+          setPais("");
+          setCiudad("");
           setError(null);
         }
       })
@@ -62,13 +63,16 @@ const Formulario = () => {
             </Form.Group>
           </div>
         </div>
-        <Button variant="info" onClick={obtenerClima} type="submit">
-          Consultar
-        </Button>
+        <div className="text-center mt-3">
+          <Button variant="primary" onClick={obtenerClima} type="submit">
+            {" "}
+            Consultar
+          </Button>
+        </div>
       </Form>
       <div>
-        {error && <div className="error-message">{error}</div>}
-        {infoClima && <div className="weather-info">{infoClima}</div>}
+        {error && <div className="alert alert-danger my-2">{error}</div>}
+        {infoClima && <InfoClima datosClima={infoClima} />}
       </div>
     </>
   );
