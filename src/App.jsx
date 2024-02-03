@@ -12,7 +12,6 @@ function App() {
       <Titulo></Titulo>
       <Container className="mainPage">
         <Formulario></Formulario>
-        
       </Container>
       <Footer></Footer>
     </>

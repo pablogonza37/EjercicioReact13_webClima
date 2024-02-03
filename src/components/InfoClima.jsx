@@ -38,7 +38,7 @@ const InfoClima = ({ datosClima }) => {
                   <p>Humedad: {datosClima.main.humidity}% </p>
                   <p className="m-0">Presión: {datosClima.main.pressure} hpa</p>
                 </Col>
-                <Col lg={6} className="mb-3 lead">        
+                <Col lg={6} className="mb-3 lead">
                   <p>Vientos: {datosClima.wind.speed} (km/h)</p>
                   <p>Dirección: {datosClima.wind.speed} °</p>
                   <p>Longitud: {datosClima.coord.lon}</p>

@@ -38,19 +38,23 @@ const Formulario = () => {
 
   return (
     <>
-      <Form className="text-white formulario p-4 rounded"  onSubmit={obtenerClima}>
+      <Form
+        className="text-white formulario p-4 rounded"
+        onSubmit={obtenerClima}
+      >
         <div className="row">
           <div className="col-lg-6 mb-3">
             <Form.Group controlId="exampleForm.ControlInput1">
               <Form.Label>País:</Form.Label>
               <Form.Control
-                type="text"    
+                type="text"
                 placeholder="País"
                 value={pais}
                 onChange={(e) => setPais(e.target.value)}
                 minLength={3}
                 maxLength={50}
-                pattern="[a-zA-Z\s]+" title="Solo se permiten letras y espacios"
+                pattern="[a-zA-Z\s]+"
+                title="Solo se permiten letras y espacios"
                 required
               />
             </Form.Group>
@@ -59,13 +63,14 @@ const Formulario = () => {
             <Form.Group controlId="exampleForm.ControlInput2">
               <Form.Label>Ciudad:</Form.Label>
               <Form.Control
-                type="text"   
+                type="text"
                 placeholder="Ciudad"
                 value={ciudad}
                 onChange={(e) => setCiudad(e.target.value)}
                 minLength={3}
                 maxLength={50}
-                pattern="[a-zA-Z\s]+" title="Solo se permiten letras y espacios"
+                pattern="[a-zA-Z\s]+"
+                title="Solo se permiten letras y espacios"
                 required
               />
             </Form.Group>
