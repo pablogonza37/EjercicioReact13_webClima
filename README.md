@@ -3,7 +3,7 @@ Esta aplicación web desarrollada con React permite a los usuarios consultar el 
 
 ## Demo
 
-Puedes ver una demostración del proyecto en vivo en [Netlify](https://radiant-salmiakki-77b08b.netlify.app/).
+Puedes ver una demostración del proyecto en [Netlify](https://radiant-salmiakki-77b08b.netlify.app/).
 
 ## Funcionalidades
 Los usuarios pueden ingresar una ubicación y un país.
