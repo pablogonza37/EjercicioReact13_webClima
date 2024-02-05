@@ -1,6 +1,10 @@
 # Web del Clima - Aplicación React
 Esta aplicación web desarrollada con React permite a los usuarios consultar el clima de una ubicación específica utilizando la API de OpenWeatherMap.
 
+## Demo
+
+Puedes ver una demostración del proyecto en vivo en [Netlify](https://radiant-salmiakki-77b08b.netlify.app/).
+
 ## Funcionalidades
 Los usuarios pueden ingresar una ubicación y un país.
 Al presionar el botón "Consultar", la aplicación muestra el clima actual de la ubicación ingresada.
